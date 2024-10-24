@@ -1,0 +1,104 @@
+body {
+    background: mediumaquamarine;
+    background-image: url(https://images.unsplash.com/photo-1565799557186-1abfed8a31e5?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 55px;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(240, 248, 255, 0.192);
+    margin-bottom: 40px;
+}
+.big-container, .par-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p {
+    font-family: 'Bellefair', serif;
+    font-size: 38px;
+    color: rgb(224, 224, 224);
+    text-align: center;
+    margin: 10px;
+}
+.par-container {
+    background-color: rgba(77, 141, 136, 0.568);
+    padding: 25px;
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 850px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+video {
+    width: 800px;
+}
+button {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid rgb(180, 180, 180);
+    color: white;
+    background-color: rgba(240, 248, 255, 0.192);
+    cursor: pointer;
+    margin: 5px;
+}
+.buttons {
+    margin-bottom: 50px;
+}
+.footer {
+    margin-top: auto;
+}
+.footer-text {
+    font-size: 15px;
+}
+
+@media all and (max-width: 1000px) {
+    .par-container {
+        width: 80%;
+    }
+    video {
+        width: 650px;
+    }
+}
+@media all and (max-width: 700px) {
+    video {
+        width: 100%;
+    }
+    h1 {
+        font-size: 45px;
+        margin: 10px;
+    }
+    p {
+        font-size: 34px;
+    }
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media all and (max-width: 520px) {
+    h1 {
+        font-size: 42px;
+    }
+    .heading {
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 30px;
+    }
+}
